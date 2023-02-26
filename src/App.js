@@ -1,11 +1,20 @@
 
 
 import './App.css';
+import Header from './component/Header';
 import Navbar from './component/Navbar';
+import Banner from './component/Banner';
+import Intro from './component/Intro';
+
 
 function App() {
   return (
-  <Navbar></Navbar>
+    <>
+    <Header></Header>
+    <Navbar></Navbar>
+    <Banner></Banner>
+    <Intro></Intro>
+    </>
   );
 }
 
