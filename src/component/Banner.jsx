@@ -1,69 +1,77 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../styles/Banner.css'
+
 
 const Banner = () => {
     return (
-            <>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-6">
-                            <div id="carousel" className="carousel slide" data-bs-ride="carousel">
-                                <div className="carousel-inner">
-                                    <div className="carousel-item active">
-                                        <img src="images/banner/burger/b1.avif" className="d-block w-100" alt="banner1" height="400" width="720" />
-                                        <div className="overlay">
-                                            <h3>Davy Jones</h3>
-                                            <i className="bi bi-egg-fried"></i>
-                                        </div>
+        <>
+            <div className="container text-center">
+                <div className="row flex-wrap justify-content-center">
+                    <div className="col-md-6 flex-row">
+                        <div id="burger-carousel" className="carousel slide" data-bs-ride="carousel">
+                            <div className="carousel-inner">
+                                <div className="carousel-item active">
+                                    <img src="images/banner/burger/b1.avif" className="banner-img" alt="banner1" />
+                                    <div className="overlay">
+                                        <h3>Davy Jones</h3>
+                                        <i className="bi bi-egg-fried"></i>
                                     </div>
-                                    <div className="carousel-item">
-                                        <img src="images/banner/burger/b2.avif" className="d-block w-100" alt="banner2" height="400" width="720" />
-                                        <div className="overlay">
-                                            <h3>Carroñero</h3>
-                                            <i className="bi bi-egg-fried"></i>
-                                        </div>
+                                </div>
+                                <div className="carousel-item">
+                                    <img src="images/banner/burger/b2.avif" className="banner-img" alt="banner2" />
+                                    <div className="overlay">
+                                        <h3>Carroñero</h3>
+                                        <i className="bi bi-egg-fried"></i>
                                     </div>
-                                    <div className="carousel-item">
-                                        <img src="images/banner/burger/b3.avif" className="d-block w-100" alt="banner3" height="400" width="720" />
-                                        <div className="overlay">
-                                            <h3>Messias</h3>
-                                            <i className="bi bi-egg-fried"></i>
-                                        </div>
+                                </div>
+                                <div className="carousel-item">
+                                    <img src="images/banner/burger/b3.avif" className="banner-img" alt="banner3" />
+                                    <div className="overlay">
+                                        <h3>Messias</h3>
+                                        <i className="bi bi-egg-fried"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-6">
-                            <div id="carousel" className="carousel slide" data-bs-ride="carousel">
-                                <div className="carousel-inner">
-                                    <div className="carousel-item active">
-                                        <img src="images/banner/drink/d1.webp" className="d-block w-100" alt="banner4" height="400" width="720" />
-                                        <div className="overlay">
-                                            <h3>Bebidas Artesanales</h3>
-                                            <i className="bi bi-cup-straw"></i>
-                                        </div>
+                    </div>
+                    <div className="col-md-6 flex-row">
+                        <div id="drink-carousel" className="carousel slide" data-bs-ride="carousel">
+                            <div className="carousel-inner">
+                                <div className="carousel-item active">
+                                    <img src="images/banner/drink/d1.webp" className="banner-img" alt="banner4" />
+                                    <div className="overlay">
+                                        <h3>Bebidas Artesanales</h3>
+                                        <i className="bi bi-cup-straw"></i>
                                     </div>
-                                    <div className="carousel-item">
-                                        <img src="images/banner/drink/d2.jpeg" className="d-block w-100" alt="banner5" height="400" width="720" />
-                                        <div className="overlay">
-                                            <h3>La mejor de la empresa</h3>
-                                            <i className="bi bi-cup-straw"></i>
-                                        </div>
+                                </div>
+                                <div className="carousel-item">
+                                    <img src="images/banner/drink/d2.jpeg" className="banner-img" alt="banner5" />
+                                    <div className="overlay">
+                                        <h3>La mejor de la empresa</h3>
+                                        <i className="bi bi-cup-straw"></i>
                                     </div>
-                                    <div className="carousel-item">
-                                        <img src="images/banner/drink/d3.jpg" className="d-block w-100" alt="banner6" height="400" width="720" />
-                                        <div className="overlay">
-                                            <h3>La unica e inigualable</h3>
-                                            <i className="bi bi-cup-straw"></i>
-                                        </div>
+                                </div>
+                                <div className="carousel-item">
+                                    <img src="images/banner/drink/d3.jpg" className="banner-img" alt="banner6" />
+                                    <div className="overlay">
+                                        <h3>La unica e inigualable</h3>
+                                        <i className="bi bi-cup-straw"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </>
+            </div>
+        </>
     );
-}
+};
+
+
+Banner.propTypes = {
+
+};
+
 
 export default Banner;

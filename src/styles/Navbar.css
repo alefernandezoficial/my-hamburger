@@ -1,6 +1,15 @@
 .navbar-nav {
     margin-left: auto;
     margin-right: auto;
+    z-index: 9999;
+}
+
+.navbar {
+    background-color: #333333da;
+}
+
+.navbar a {
+    color: #ff9100;
 }
 
 .nav-link {
@@ -11,5 +20,5 @@
 }
 
 .nav-link:hover {
-    border-bottom-color: #ccc;
+    border-bottom-color: #ff9100;
 }

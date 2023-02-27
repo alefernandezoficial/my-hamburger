@@ -4,8 +4,8 @@ import '../styles/Intro.css';
 const Intro = () => {
     return (
         <div>
-            <div class="text-center">
-                <img src="images/nobk2.png" class="rounded" alt="logo" height="100" width="100" />
+            <div className="text-center">
+                <img src="images/nobk2.png" className="rounded m-5" alt="logo" height="100" width="100" />
                 <h4>GOAT BURGER HAUS</h4>
                 <p>
                     En LASSEN BURGER HAUS reinventamos la hamburguesa, homenajeando a su creador Louis LASSEN, un inmigrante alemán, quien crea en 1895 la primera hamburguesa de EE.UU.

@@ -3,8 +3,8 @@ import '../styles/Header.css';
 
 const Header = () => {
     return (
-        <div>
             <>
+            <div className='header-overlay'>
                 <div>
                     <div>
                         <div id="carouselExampleFade" className="carousel slide carousel-fade">
@@ -30,8 +30,8 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
+                </div>
             </>
-        </div>
     );
 }
 

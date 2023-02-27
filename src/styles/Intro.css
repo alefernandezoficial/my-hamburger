@@ -1,0 +1,15 @@
+.text-center h4 {
+    text-align: center;
+    height: 70px;
+}
+
+.text-center p {
+    height: 230px;
+    border-width: 200px;
+}
+
+.text-center {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
