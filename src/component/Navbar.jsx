@@ -3,6 +3,7 @@ import '../styles/Navbar.css';
 
 const Navbar = () => {
   return (
+    <div style={{ fontFamily: 'Oswald, sans-serif' }}>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="#"><img src="images/nobk.png" alt="Logo" width="100" height="100" className="d-inline-block align-text-top"/></a>
@@ -27,6 +28,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      </div>
   );
 }
 

@@ -1,0 +1,24 @@
+img.rounded-staff {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .rounded-staff {
+    height: 300px;
+    width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .rounded-staff {
+    height: 200px;
+    width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .rounded-staff {
+    height: 100px;
+    width: 200px;
+    }
+}

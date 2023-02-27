@@ -1,0 +1,8 @@
+.text-header {
+    position: relative;
+    text-align: center;
+    bottom: 110px;
+    color: #fff;
+    margin: 0 auto;
+    z-index: 9999;
+}

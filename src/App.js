@@ -6,6 +6,7 @@ import Banner from './component/Banner';
 import Intro from './component/Intro';
 import Product from './component/Product';
 import Footer from './component/Footer';
+import About from './component/About';
 
 
 
@@ -19,6 +20,8 @@ function App() {
     <Banner></Banner>
 
     <Intro></Intro>
+
+    <About></About>
 
     <Product></Product>
 

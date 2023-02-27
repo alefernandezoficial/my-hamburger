@@ -5,11 +5,16 @@
 }
 
 .navbar {
-    background-color: #333333da;
+    background-color: #33333393;
+    border-bottom: 1px solid #ff9100;
 }
 
 .navbar a {
-    color: #ff9100;
+    color: #ccc;
+}
+
+.navbar-nav li a:hover {
+    color: #ffffff;
 }
 
 .nav-link {
@@ -21,4 +26,12 @@
 
 .nav-link:hover {
     border-bottom-color: #ff9100;
+}
+
+.navbar-toggler {
+    border: 1px solid #ccc
+}
+
+.bi.bi-three-dots-vertical {
+    color: #ffffff;
 }

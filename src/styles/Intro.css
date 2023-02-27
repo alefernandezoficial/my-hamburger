@@ -1,11 +1,13 @@
 .text-center h4 {
     text-align: center;
     height: 70px;
+    font-size: 35px;
 }
 
 .text-center p {
-    height: 230px;
+    height: 25rem;
     border-width: 200px;
+    overflow: hidden;
 }
 
 .text-center {

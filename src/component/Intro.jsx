@@ -6,12 +6,18 @@ const Intro = () => {
         <div>
             <div className="text-center">
                 <img src="images/nobk2.png" className="rounded m-5" alt="logo" height="100" width="100" />
-                <h4>GOAT BURGER HAUS</h4>
-                <p>
-                    En LASSEN BURGER HAUS reinventamos la hamburguesa, homenajeando a su creador Louis LASSEN, un inmigrante alemán, quien crea en 1895 la primera hamburguesa de EE.UU.
-                    Reformulamos la receta original, desarrollando hamburguesas gourmet, llenas de sabor, de estilo casero, usando los mejores ingredientes frescos y naturales. Presentadas en un pan casero especial de elaboración propia.
-                    Tenemos una propuesta innovadora de Pop-up Stores montados en contenedores reciclados, totalmente equipados, que prometen al visitante una experiencia gastronómica única, garantizando la calidad y la originalidad de nuestros productos.
-                </p>
+                <div style={{ fontFamily: 'Oswald, sans-serif' }}>
+                    <h4>- GOAT BURGER HAUS -</h4>
+                    <p>
+                        ¡Disfruta de la comida más sabrosa en <span className="badge text-bg-warning">GOAT BURGER HAUS!</span>
+                        Nuestro concepto único ofrece una experiencia gastronómica sin igual.
+                        Nuestros hamburguesas siempre están hechas a mano con la mejor carne de hamburguesa de vaca, que es cuidadosamente seleccionada para un sabor y textura únicos.
+                        Nuestras hamburguesas están acompañadas de una variedad de salsas, vegetales y aderezos, todos los cuales son cuidadosamente seleccionados para ofrecer el mejor sabor posible.
+                        Nuestra atmósfera única te hará sentir como en casa.
+                        Mientras disfrutas de tu hamburguesa, puedes sentarte en el interior moderno y acogedor, disfrutar de la música relajante y las vistas de la ciudad.
+                        <span className="badge text-bg-dark">¡Ven a GOAT BURGER HAUS!</span>
+                    </p>
+                </div>
             </div>
         </div>
     );
