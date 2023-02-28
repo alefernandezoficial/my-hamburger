@@ -1,31 +1,33 @@
 import './App.css';
 
+import React, { useState } from 'react';
+
 import Navbar from './component/Navbar';
 import Header from './component/Header';
 import Banner from './component/Banner';
 import Intro from './component/Intro';
-import Product from './component/Product';
 import Footer from './component/Footer';
 import About from './component/About';
-
-
+import Product from './component/Product';
 
 function App() {
+
   return (
     <>
-    <Navbar></Navbar>
+      <Navbar></Navbar>
 
-    <Header></Header>
+      <Header></Header>
 
-    <Banner></Banner>
+      <Banner></Banner>
 
-    <Intro></Intro>
+      <Intro></Intro>
+      
+      <Product></Product>
 
-    <About></About>
+      <About></About>
 
-    <Product></Product>
+      <Footer></Footer>
 
-    <Footer></Footer>
     </>
   );
 }

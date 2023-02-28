@@ -1,6 +1,62 @@
+/* Estilos generales del footer */
 .footer {
-    background-color: #33333393;
+    background-color: #33333365;
+    color: #333;
+    padding: 50px 0;
+}
+
+/* Contenedor principal del footer */
+.footer__container {
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Columna para la dirección */
+.footer__column--address {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+/* Columna para el horario */
+.footer__column--hours {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+/* Columna para el contacto */
+.footer__column--contact {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+/* Columna para la ubicación */
+.footer__column--location {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+/* Título de cada sección */
+.footer__title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Texto de cada sección */
+.footer__text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Información adicional en la parte inferior del footer */
+.footer__bottom {
+    background-color: #d9d9d9;
+    color: #666;
+    padding: 20px 0;
     text-align: center;
-    border-top: 1px solid #ff9100;
+    border-top: 1px solid #ff910f;
 }

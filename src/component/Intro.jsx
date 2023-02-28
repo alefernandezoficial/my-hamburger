@@ -5,7 +5,7 @@ const Intro = () => {
     return (
         <div>
             <div className="text-center">
-                <img src="images/nobk2.png" className="rounded m-5" alt="logo" height="100" width="100" />
+                <img src="images/nobk2.png" className="rounded m-5" alt="logo" height="200" width="200" />
                 <div style={{ fontFamily: 'Oswald, sans-serif' }}>
                     <h4>- GOAT BURGER HAUS -</h4>
                     <p>

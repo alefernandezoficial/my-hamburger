@@ -18,7 +18,6 @@ const Header = () => {
                                     <img src="images/responsive2.jpg" className="d-block w-100" alt="imagen3" />
                                 </div>
                             </div>
-
                             <div className='text-header' style={{ fontFamily: 'Oswald, sans-serif' }}>
                                 <h1 className='fw-bold'>Homemade & Delicious</h1>
                                 <p>Hamburguesas gourmet estilo casero, pensadas para vos</p>

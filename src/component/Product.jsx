@@ -1,31 +1,39 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../styles/Product.css'
+
 
 const Product = () => {
     return (
-        <>
-            <div class="grid-containter">
-                <div class="grid-item" onClick="openModal()">
-                    <img src="img1.jpg" alt="Imagen1" placeholder='acavalaimagen'/>
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true" data-bs-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/product/h1.jpg" class="d-block w-100" alt="..." />
                 </div>
-                <div class="grid-item" onClick="openModal()">
-                    <img src="img2.jpg" alt="Imagen2" placeholder='acavalaimagen'/>
+                <div class="carousel-item">
+                    <img src="images/product/h2.jpg" class="d-block w-100 slide-in" alt="..." />
                 </div>
-                <div class="grid-item" onClick="openModal()">
-                    <img src="img3.jpg" alt="Imagen3" placeholder='acavalaimagen'/>
+                <div class="carousel-item">
+                    <img src="images/product/h3.jpg" class="d-block w-100 slide-in" alt="..." />
                 </div>
-                <div class="grid-item" onClick="openModal()">
-                    <img src="img4.jpg" alt="Imagen4" placeholder='acavalaimagen'/>
-                </div>
-                <div class="grid-item" onClick="openModal()">
-                    <img src="img5.jpg" alt="Imagen5" placeholder='acavalaimagen'/>
-                </div>
-                <div class="grid-item" onClick="openModal()">
-                    <img src="img6.jpg" alt="Imagen6" placeholder='acavalaimagen'/>
-                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </>
+        </div>
     );
-}
+};
+
+
+Product.propTypes = {
+
+};
+
 
 export default Product;
