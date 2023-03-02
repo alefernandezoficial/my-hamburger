@@ -1,9 +1,9 @@
-import React from 'react';
-import '../styles/About.css'
+import React from 'react'
+import '../styles/About.css';
 
-const About = () => {
+function About() {
     return (
-        <div>
+    <section id="About">
             <div className="text-center">
                 <div style={{ fontFamily: 'Oswald, sans-serif' }}>
                     <h4>- Conocenos -</h4>
@@ -20,8 +20,8 @@ const About = () => {
                     </p>
                 </div>
             </div>
-        </div>
-    );
+    </section>
+    )
 }
 
-export default About;
+export default About

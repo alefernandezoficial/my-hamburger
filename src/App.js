@@ -5,30 +5,33 @@ import React, { useState } from 'react';
 import Navbar from './component/Navbar';
 import Header from './component/Header';
 import Banner from './component/Banner';
+
 import Intro from './component/Intro';
-import Footer from './component/Footer';
 import About from './component/About';
+import Contact from './component/Contact';
 import Product from './component/Product';
+
+import Footer from './component/Footer';
 
 function App() {
 
   return (
-    <>
-      <Navbar></Navbar>
+    <div>
+      <Navbar />
+      <Header />
+      <Banner />
 
-      <Header></Header>
-
-      <Banner></Banner>
-
-      <Intro></Intro>
+      <Intro />
       
-      <Product></Product>
+      <Product />
 
-      <About></About>
+      <About />
+      
+      <Contact />
+      
+      <Footer />
 
-      <Footer></Footer>
-
-    </>
+    </div>
   );
 }
 

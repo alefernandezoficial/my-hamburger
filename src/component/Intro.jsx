@@ -1,9 +1,11 @@
 import React from 'react';
 import '../styles/Intro.css';
 
+
+
 const Intro = () => {
     return (
-        <div>
+            <section id="Home">
             <div className="text-center">
                 <img src="images/nobk2.png" className="rounded m-5" alt="logo" height="200" width="200" />
                 <div style={{ fontFamily: 'Oswald, sans-serif' }}>
@@ -19,7 +21,7 @@ const Intro = () => {
                     </p>
                 </div>
             </div>
-        </div>
+            </section>
     );
 }
 
