@@ -10,7 +10,7 @@ function Banner() {
                         <div id="burger-carousel" className="carousel slide" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img src="images/banner/burger/b1.avif" className="banner-img" alt="banner1" />
+                                    <img src="images/banner/burger/b1.jpg" className="banner-img" alt="banner1" />
                                     <div className="overlay">
                                         <div style={{ fontFamily: 'Oswald, sans-serif' }}><h3>Davy Jones</h3>
                                             <i className="bi bi-egg-fried"></i>
@@ -18,7 +18,7 @@ function Banner() {
                                     </div>
                                 </div>
                                 <div className="carousel-item">
-                                    <img src="images/banner/burger/b2.avif" className="banner-img" alt="banner2" />
+                                    <img src="images/banner/burger/b2.jpg" className="banner-img" alt="banner2" />
                                     <div className="overlay">
                                         <div style={{ fontFamily: 'Oswald, sans-serif' }}><h3>Carroñero</h3>
                                             <i className="bi bi-egg-fried"></i>
@@ -26,7 +26,7 @@ function Banner() {
                                     </div>
                                 </div>
                                 <div className="carousel-item">
-                                    <img src="images/banner/burger/b3.avif" className="banner-img" alt="banner3" />
+                                    <img src="images/banner/burger/b3.jpg" className="banner-img" alt="banner3" />
                                     <div className="overlay">
                                         <div style={{ fontFamily: 'Oswald, sans-serif' }}><h3>Messias</h3>
                                             <i className="bi bi-egg-fried"></i>
@@ -40,7 +40,7 @@ function Banner() {
                         <div id="drink-carousel" className="carousel slide" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img src="images/banner/drink/d1.webp" className="banner-img" alt="banner4" />
+                                    <img src="images/banner/drink/d1.jpg" className="banner-img" alt="banner4" />
                                     <div className="overlay">
                                         <div style={{ fontFamily: 'Oswald, sans-serif' }}><h3>Bebidas Artesanales</h3>
                                             <i className="bi bi-cup-straw"></i>
@@ -48,7 +48,7 @@ function Banner() {
                                     </div>
                                 </div>
                                 <div className="carousel-item">
-                                    <img src="images/banner/drink/d2.jpeg" className="banner-img" alt="banner5" />
+                                    <img src="images/banner/drink/d2.jpg" className="banner-img" alt="banner5" />
                                     <div className="overlay">
                                         <div style={{ fontFamily: 'Oswald, sans-serif' }}><h3>La mejor de la empresa</h3>
                                             <i className="bi bi-cup-straw"></i>

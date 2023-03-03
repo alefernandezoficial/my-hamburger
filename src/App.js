@@ -22,12 +22,12 @@ function App() {
       <Banner />
 
       <Intro />
-      
-      <Product />
 
       <About />
       
       <Contact />
+
+      <Product />
       
       <Footer />
 

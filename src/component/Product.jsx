@@ -1,49 +1,44 @@
-import React from 'react'
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import '../styles/Product.css';
 
+const products = [
+    { image: 'images/product/h1.jpg', name: 'Hamburguesa Clásica', price: '$10.00' },
+    { image: 'images/product/h2.jpg', name: 'Hamburguesa de Pollo', price: '$12.00' },
+    { image: 'images/product/h3.jpg', name: 'Hamburguesa de Queso', price: '$11.00' },
+    { image: 'images/product/h4.jpg', name: 'Hamburguesa de Pescado', price: '$13.00' },
+    { image: 'images/product/h5.jpg', name: 'Hamburguesa Doble', price: '$15.00' },
+    { image: 'images/product/h6.jpg', name: 'Hamburguesa con Tocino', price: '$13.00' },
+    { image: 'images/product/h7.jpg', name: 'Hamburguesa Vegetariana', price: '$11.00' },
+];
+
 function Product() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+    };
+
     return (
         <section id="Product">
-            <div id="carouselExampleCaptions" className="carousel slide">
-                <div className="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img src="images/product/h1.jpg" className="d-block w-100" alt="..." />
-                        <div className="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+            <Slider {...settings}>
+                {products.map((product, index) => (
+                    <div key={index}>
+                        <img src={product.image} alt={product.name} />
+                        <div className="product-info">
+                            <h2>{product.name}</h2>
+                            <p>{product.price}</p>
                         </div>
                     </div>
-                    <div className="carousel-item">
-                        <img src="images/product/h2.jpg" className="d-block w-100" alt="..." />
-                        <div className="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="images/product/h3.jpg" className="d-block w-100" alt="..." />
-                        <div className="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div>
+                ))}
+            </Slider>
         </section>
-    )
+    );
 }
 
-export default Product
+export default Product;
