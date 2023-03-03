@@ -1,10 +1,17 @@
 import React from 'react';
-import '../styles/Footer.css'
+import { Link } from 'react-scroll';
+import '../styles/Footer.css';
+import '../styles/Encabezado.css';
 
 const Footer = () => {
     return (
         <div style={{ fontFamily: 'Oswald, sans-serif' }}>
             <footer className="footer">
+
+                <button className='encabezado'>
+                    <Link to="header" smooth={true} duration={500}>Ir al encabezado</Link>
+                </button>
+                
                 <div className="footer__container">
                     <div className="footer__column">
                         <h3 className="footer__title fw-bold"><i className="bi bi-building"></i> Dirección</h3>
@@ -23,7 +30,7 @@ const Footer = () => {
                     <div className="footer__column">
                         <h3 className="footer__title fw-bold"><i className="bi bi-buildings"></i> Ubicación</h3>
                         <div className="footer__map">
-                        <p className="footer__text">Wallabi 420 Sydney</p>
+                            <p className="footer__text">Wallabi 420 Sydney</p>
                         </div>
                     </div>
                 </div>

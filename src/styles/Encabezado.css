@@ -1,0 +1,19 @@
+.encabezado {
+    font-size: 1rem;
+    padding: 1px 14px;
+    border: 2px solid #ffffff77;
+    color: #000000;
+    background-color: #ff91007c;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+.encabezado:hover {
+    transform: scale(1.1);
+    background-color: #ff8800cb;
+}

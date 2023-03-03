@@ -1,4 +1,5 @@
 import './App.css';
+import './config/server';
 
 import React, { useState } from 'react';
 
@@ -16,7 +17,7 @@ import Footer from './component/Footer';
 function App() {
 
   return (
-    <div>
+    <div><header id="header">
       <Navbar />
       <Header />
       <Banner />
@@ -30,7 +31,7 @@ function App() {
       <Product />
       
       <Footer />
-
+</header>
     </div>
   );
 }

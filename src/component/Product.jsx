@@ -30,7 +30,7 @@ function Product() {
                 {products.map((product, index) => (
                     <div key={index}>
                         <img src={product.image} alt={product.name} />
-                        <div className="product-info">
+                        <div className="product-info" style={{ fontFamily: 'Oswald, sans-serif' }}>
                             <h2>{product.name}</h2>
                             <p>{product.price}</p>
                         </div>
