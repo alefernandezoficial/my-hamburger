@@ -1,37 +1,42 @@
 import './App.css';
-import './config/server';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react';
 
-import React, { useState } from 'react';
-
-import Navbar from './component/Navbar';
-import Header from './component/Header';
-import Banner from './component/Banner';
-
-import Intro from './component/Intro';
+import Home from './component/Home';
 import About from './component/About';
 import Contact from './component/Contact';
 import Product from './component/Product';
 
+import Navbar from './component/Navbar';
+import Header from './component/Header';
+import Banner from './component/Banner';
 import Footer from './component/Footer';
 
 function App() {
-
   return (
-    <div><header id="header">
-      <Navbar />
-      <Header />
-      <Banner />
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={
+            <div>
+              <header id="header">
+                <Navbar />
+                <Header />
+                <Banner />
+              </header>
+              <Home />
+              <About />
+              <Contact />
+              <Product />
+            </div>
+          } />
+          <Route path='/About' element={<About />} />
+          <Route path='/Contact' element={<Contact />} />
+          <Route path='/Product' element={<Product />} />
+        </Routes>
+      </BrowserRouter>
 
-      <Intro />
-
-      <About />
-      
-      <Contact />
-
-      <Product />
-      
       <Footer />
-</header>
     </div>
   );
 }
