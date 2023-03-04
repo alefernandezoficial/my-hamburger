@@ -1,19 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import '../styles/Product.css';
-import Cart from './Cart';
+import '../../styles/pages/Product.css';
+import Cart from '../pages/Cart';
 
-const products = [
-    { id: 1, image: 'images/product/h1.jpg', name: 'goatBurger Clasica', price: '$950.00' },
-    { id: 2, image: 'images/product/h2.jpg', name: 'Holandes Errante', price: '$1650.00' },
-    { id: 3, image: 'images/product/h3.jpg', name: 'La triple marioneta', price: '$14.00' },
-    { id: 4, image: 'images/product/h4.jpg', name: 'Hamburguesa de Pescado', price: '$13.00' },
-    { id: 5, image: 'images/product/h5.jpg', name: 'Hamburguesa Doble', price: '$15.00' },
-    { id: 6, image: 'images/product/h6.jpg', name: 'Hamburguesa con Tocino', price: '$13.00' },
-    { id: 7, image: 'images/product/h7.jpg', name: 'Hamburguesa Vegetariana', price: '$11.00' },
-];
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = 'https://yqenaqabjnzqqniiqnxc.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlxZW5hcWFiam56cXFuaWlxbnhjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzc4NzQ2ODAsImV4cCI6MTk5MzQ1MDY4MH0.l4iLyHwPfjvusfLtUz3qyKsmIp2iNOpTAVaVRpj6Qv0';
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+
 
 function Product() {
     const [cart, setCart] = useState([]);
@@ -29,6 +27,17 @@ function Product() {
             setCart([...cart, newProduct]);
         }
     };
+
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        async function fetchProducts() {
+            let { data: products, error } = await supabase.from('products').select('*');
+            if (error) console.log('Error fetching products:', error.message);
+            else setProducts(products);
+        }
+        fetchProducts();
+    }, []);
 
     const removeFromCart = (productId) => {
         const updatedCart = cart.filter((p) => p.id !== productId);
@@ -59,10 +68,11 @@ function Product() {
             <Slider {...settings}>
                 {products.map((product) => (
                     <div key={product.id}>
-                        <img src={product.image} alt={product.name} />
+                        <img src={product.image_url} alt={product.name} />
                         <div className="product-info" style={{ fontFamily: 'Oswald, sans-serif' }}>
                             <h2>{product.name}</h2>
-                            <p>{product.price}</p>
+                            <p>{parseFloat(product.price).toFixed(2)}</p>
+                            <p>{product.description}</p>
                             <button onClick={() => addToCart(product)}>
                                 Agregar al carrito
                             </button>

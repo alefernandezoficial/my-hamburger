@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/Home.css';
+import '../../styles/pages/Home.css';
 
 
 
-const Intro = () => {
+const Home = () => {
     return (
         <section id="Home">
             <div className="text-center">
@@ -23,4 +23,4 @@ const Intro = () => {
     );
 }
 
-export default Intro;
+export default Home;

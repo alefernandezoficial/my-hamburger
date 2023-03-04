@@ -2,11 +2,13 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 
-import Home from './component/Home';
-import About from './component/About';
-import Contact from './component/Contact';
-import Product from './component/Product';
+// Pages y contenidos
+import Home from './component/pages/Home';
+import About from './component/pages/About';
+import Contact from './component/pages/Contact';
+import Product from './component/pages/Product';
 
+// Estructura y navegacion
 import Navbar from './component/Navbar';
 import Header from './component/Header';
 import Banner from './component/Banner';
@@ -16,26 +18,16 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+        <Navbar />
+        <section id="header"><Header /></section>
+        <Banner />
         <Routes>
-          <Route path='/' element={
-            <div>
-              <header id="header">
-                <Navbar />
-                <Header />
-                <Banner />
-              </header>
-              <Home />
-              <About />
-              <Contact />
-              <Product />
-            </div>
-          } />
-          <Route path='/About' element={<About />} />
-          <Route path='/Contact' element={<Contact />} />
-          <Route path='/Product' element={<Product />} />
+          <Route path="/" element={<Home />} />
         </Routes>
+        <About />
+        <Contact />
+        <Product />
       </BrowserRouter>
-
       <Footer />
     </div>
   );
