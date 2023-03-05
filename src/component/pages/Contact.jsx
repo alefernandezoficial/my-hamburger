@@ -1,14 +1,21 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import '../../styles/pages/Contact.css';
 
 function Contact() {
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+    emailjs.sendForm('service_ox7aili', 'template_sbu6hcw', event.target, 'rjcSU1aj5GcjvyJkL', { name, email, message })
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
   };
 
   return (
@@ -25,6 +32,7 @@ function Contact() {
             <input
               type="text"
               id="name"
+              name='name'
               value={name}
               onChange={(event) => setName(event.target.value)}
             />
@@ -34,6 +42,7 @@ function Contact() {
             <input
               type="email"
               id="email"
+              name='email'
               value={email}
               onChange={(event) => setEmail(event.target.value)}
             />
@@ -42,6 +51,7 @@ function Contact() {
             <label htmlFor="message">Mensaje:</label>
             <textarea
               id="message"
+              name='message'
               value={message}
               onChange={(event) => setMessage(event.target.value)}
             />
@@ -50,6 +60,8 @@ function Contact() {
         </form>
       </div>
     </section>
+
+    
   );
 }
 

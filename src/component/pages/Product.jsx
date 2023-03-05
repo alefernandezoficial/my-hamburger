@@ -11,8 +11,6 @@ const supabaseUrl = 'https://yqenaqabjnzqqniiqnxc.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlxZW5hcWFiam56cXFuaWlxbnhjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzc4NzQ2ODAsImV4cCI6MTk5MzQ1MDY4MH0.l4iLyHwPfjvusfLtUz3qyKsmIp2iNOpTAVaVRpj6Qv0';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-
-
 function Product() {
     const [cart, setCart] = useState([]);
     const addToCart = (product) => {
