@@ -42,3 +42,8 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #0055a5;
 }
+
+.alertaMensaje {
+    padding: 10px;
+    border: 1px solid black;
+}
