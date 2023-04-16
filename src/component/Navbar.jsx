@@ -1,6 +1,8 @@
 import React from 'react'
 import '../styles/Navbar.css';
 
+import NoBk from "../assets/images/nobk.png";
+
 function Navbar() {
   function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
@@ -11,7 +13,7 @@ function Navbar() {
     <div style={{ fontFamily: 'Oswald, sans-serif' }}>
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container-fluid">
-          <a className="navbar-brand"><img src="images/nobk.png" alt="Logo" width="100" height="100" className="d-inline-block align-text-top" /></a>
+          <a className="navbar-brand"><img src={NoBk} alt="Logo" width="100" height="100" className="d-inline-block align-text-top" /></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="bi bi-three-dots-vertical"></span>
           </button>

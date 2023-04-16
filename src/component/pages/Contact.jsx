@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import '../../styles/pages/Contact.css';
 
+import NoBk2 from "../../assets/images/nobk2.png";
+
 function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -32,7 +34,7 @@ function Contact() {
     <section id="Contact">
       <div className="text-center">
         <div style={{ fontFamily: 'Oswald, sans-serif' }}>
-          <img src="images/nobk2.png" className="rounded m-5" alt="logo" height="200" width="200" />
+          <img src={NoBk2} className="rounded m-5" alt="logo" height="200" width="200" />
           <h4>Contacto</h4>
           ¡Gracias por contactarnos!<hr></hr>
         </div>

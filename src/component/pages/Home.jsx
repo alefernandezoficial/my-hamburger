@@ -1,11 +1,13 @@
 import React from 'react';
 import '../../styles/pages/Home.css';
 
+import NoBk2 from "../../assets/images/nobk2.png";
+
 const Home = () => {
     return (
         <section id="Home">
             <div className="text-center">
-                <img src="images/nobk2.png" className="rounded m-5" alt="logo" height="200" width="200" />
+                <img src={NoBk2} className="rounded m-5" alt="logo" height="200" width="200" />
                 <div style={{ fontFamily: 'Oswald, sans-serif' }}>
                     <h4>- GOAT BURGER HAUS -</h4>
                     <p><span className="badge rounded-pill text-bg-warning">GOAT Burger Haus</span> es una hamburguesería que se distingue por su dedicación a la calidad de sus ingredientes y la excelencia en la preparación de sus platillos. Su objetivo es ofrecer una experiencia gastronómica única y satisfactoria para todos sus clientes.

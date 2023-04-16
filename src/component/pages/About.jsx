@@ -1,13 +1,15 @@
 import React from 'react'
 import '../../styles/pages/About.css';
 
+import CherOfTheMonth from "../../assets/images/chef-of-the-month.jpg";
+
 function About() {
     return (
     <section id="About">
             <div className="text-center">
                 <div style={{ fontFamily: 'Oswald, sans-serif' }}>
                     <h4>- Conocenos -</h4>
-                    <img src="images/chef-of-the-month.jpg" className="rounded-staff m-5 mx-auto" alt="logo" height="360" width="600" />
+                    <img src={CherOfTheMonth} className="rounded-staff m-5 mx-auto" alt="logo" height="360" width="600" />
                     <h4>Nuestro Staff</h4>
                     <p>
                         Nos especializamos en creación de productos gourmet,

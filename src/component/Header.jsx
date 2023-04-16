@@ -1,6 +1,9 @@
 import React from 'react';
 import '../styles/Header.css';
 
+import Responsive1 from "../assets/images/responsive.jpg";
+import Responsive2 from "../assets/images/responsive2.jpg";
+
 const Header = () => {
     return (
             <>
@@ -9,13 +12,13 @@ const Header = () => {
                         <div id="carouselExampleFade" className="carousel slide carousel-fade">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img src="images/responsive2.jpg" className="d-block w-100" alt="imagen1" />
+                                    <img src={Responsive2} className="d-block w-100" alt="imagen1" />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src="images/responsive2.jpg" className="d-block w-100" alt="imagen2" />
+                                    <img src={Responsive2} className="d-block w-100" alt="imagen2" />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src="images/responsive2.jpg" className="d-block w-100" alt="imagen3" />
+                                    <img src={Responsive2} className="d-block w-100" alt="imagen3" />
                                 </div>
                             </div>
                             <div className='text-header' style={{ fontFamily: 'Oswald, sans-serif' }}>

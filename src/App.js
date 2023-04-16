@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 
 // Pages y contenidos
@@ -17,7 +17,7 @@ import Footer from './component/Footer';
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter basename='/'>
         <Navbar />
         <section id="header"><Header /></section>
         <Banner />
@@ -27,7 +27,7 @@ function App() {
         <About />
         <Contact />
         <Product />
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </div>
   );
