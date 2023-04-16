@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/my-hamburger/static/css/main.8245cddb.css",
+    "main.js": "/my-hamburger/static/js/main.4bc65ded.js",
+    "static/media/nobk.png": "/my-hamburger/static/media/nobk.086ee9d843d942bf59ea.png",
+    "static/media/responsive.jpg": "/my-hamburger/static/media/responsive.273ce29c6c98790f877e.jpg",
+    "static/media/nobk2.png": "/my-hamburger/static/media/nobk2.9bbc00d54fc654edfe4c.png",
+    "static/media/responsive2.jpg": "/my-hamburger/static/media/responsive2.e924c1b58080f46afc15.jpg",
+    "static/media/d3.jpg": "/my-hamburger/static/media/d3.64bdcad811c5b1963e12.jpg",
+    "static/media/chef-of-the-month.jpg": "/my-hamburger/static/media/chef-of-the-month.04ce4f345e0c51164b51.jpg",
+    "static/media/b3.jpg": "/my-hamburger/static/media/b3.d35abcc3333b16f57681.jpg",
+    "static/media/d1.jpg": "/my-hamburger/static/media/d1.a830412775992797acbd.jpg",
+    "static/media/b1.jpg": "/my-hamburger/static/media/b1.422b47aed8a1b9b75f7f.jpg",
+    "static/media/d2.jpg": "/my-hamburger/static/media/d2.749e1e7eca9848a72319.jpg",
+    "static/media/b2.jpg": "/my-hamburger/static/media/b2.a487dc896509bb53842b.jpg",
+    "static/media/slick.svg": "/my-hamburger/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/my-hamburger/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/my-hamburger/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/my-hamburger/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/my-hamburger/index.html",
+    "main.8245cddb.css.map": "/my-hamburger/static/css/main.8245cddb.css.map",
+    "main.4bc65ded.js.map": "/my-hamburger/static/js/main.4bc65ded.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8245cddb.css",
+    "static/js/main.4bc65ded.js"
+  ]
+}
